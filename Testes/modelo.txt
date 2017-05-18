@@ -1,0 +1,15 @@
+<propositions>
+p, q, r
+<\propositions>
+<states>
+s0: p, q, r
+s1: p, q
+s2: p 
+<\states>
+<transitions>
+s0, s1
+s1, s2
+s2, s0
+s1, s1
+<\transitions>
+
