@@ -1,5 +1,5 @@
-#ifndef ESTADO_H
-#define ESTADO_H
+#ifndef STATE_H
+#define STATE_H
 #include <iostream>
 #include <list>
 
@@ -28,4 +28,4 @@ struct state{
 
 };
 
-#endif // ESTADO_H
+#endif // STATE_H
