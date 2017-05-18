@@ -5,12 +5,11 @@
 
 using namespace std;
 
-struct estado{
-    char nome;
-    list<estado> relacao;
-    list<char> preposicao;
+struct state{
+    String nome;
+    list<state> preposicao;
 
-    estado(char nome){
+    estado(string nome){
         this->nome = nome;
     }
 };
