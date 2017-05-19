@@ -6,11 +6,11 @@
 using namespace std;
 
 struct state{
-    String nome;
+    string name;
     list<char> proposition;
 
-    estado(string nome){
-        this->nome = nome;
+    state(string name){
+        this->name = name;
     }
 
     list<char> getStateProposition(state s){
@@ -18,11 +18,12 @@ struct state{
     }
 
     bool existProposition(char p){
-        foreach(char aux, this->proposition) {
-            if(aux == p)
+        list<char>::iterator it;
+        for(it = proposition.begin(); it != proposition.end();it++){
+            if(*it == p){
                 return true;
+            }
         }
-
         return false;
     }
 
