@@ -13,14 +13,22 @@ struct state{
         this->name = name;
     }
 
-    list<char> getStateProposition(state s){
-          return s.proposition;
+    void addProposition(char prop){
+        this->proposition.push_back(prop);
     }
 
-    bool existProposition(char p){
+    void addProposition(list<char> props){
+        this->proposition = props;
+    }
+
+    list<char> getStateProposition(){
+          return this->proposition;
+    }
+
+    bool existProposition(char prop){
         list<char>::iterator it;
         for(it = proposition.begin(); it != proposition.end();it++){
-            if(*it == p){
+            if(*it == prop){
                 return true;
             }
         }
